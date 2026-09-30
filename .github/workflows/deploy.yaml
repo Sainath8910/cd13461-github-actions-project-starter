@@ -129,6 +129,9 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Create deployment issue
         if: always()
         env:
